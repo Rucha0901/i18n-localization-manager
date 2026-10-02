@@ -1,0 +1,30 @@
+spec_version: "0.1.0"
+name: i18n-localization-manager
+version: 1.0.0
+description: Internationalization translation key extraction, pluralization syntax verification, and rtl layout validation.
+author: "Rucha Salpure"
+license: MIT
+model:
+  preferred: claude-opus-4-6
+  fallback:
+    - claude-sonnet-4-5-20250929
+  constraints:
+    temperature: 0.2
+    max_tokens: 4096
+skills:
+  - missing-string-detection
+tools: []
+delegation:
+  mode: auto
+runtime:
+  max_turns: 50
+  timeout: 300
+compliance:
+  risk_tier: standard
+  frameworks: []
+tags:
+  - developer-tools
+  - autonomous-agent
+  - opengap-verified
+metadata:
+  repository: "https://github.com/Rucha0901/i18n-localization-manager"
